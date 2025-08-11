@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookstore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-blue-600 p-4 flex justify-between items-center">
+    <h1 class="text-white text-xl font-bold">Bookstore</h1>
+    <div class="flex items-center space-x-4">
+      <input id="searchInput" type="text" placeholder="Search books..."
+        class="px-3 py-1 rounded" />
+      <button id="searchBtn" class="bg-white text-blue-600 px-3 py-1 rounded">Search</button>
+      <a href="checkout.html" class="text-white relative">
+        🛒 Cart <span id="cartCount" class="bg-red-500 text-white px-2 rounded-full text-sm absolute -top-3 -right-4">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="p-4">
+    <div id="bookList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
